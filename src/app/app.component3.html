@@ -1,0 +1,19 @@
+<h1 class="container bg-dark text-white text-center my-4 py-4"> Prueba ngIf</h1>
+
+<div class="container">
+
+  <button class="btn btn-dark mb-3"(click)="activo='primero'"
+  >Primero</button>
+
+  <button class="btn btn-danger mb-3" (click)="activo='segundo'"
+  >Segundo</button>
+
+  <p class="text-info" [ngClass]="{'d-block': activo=='primero'}"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis doloremque ad nostrum modi perspiciatis tenetur, quo repellendus impedit distinctio facilis placeat autem labore aliquid corrupti molestiae fuga cumque dolorem fugiat?</p>
+
+  <ng-template #showDos>
+    s
+    <p class="text-warning"  [ngClass]="{'d-block': activo=='segundo'}"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora blanditiis mollitia illum quod quis corrupti omnis quaerat accusantium? Quia officia facilis voluptate perspiciatis aliquid impedit doloremque, nulla nisi nam dignissimos.</p>
+  </ng-template>
+
+  <p class="text-danger"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora blanditiis mollitia illum quod quis corrupti omnis quaerat accusantium? Quia officia facilis voluptate perspiciatis aliquid impedit doloremque, nulla nisi nam dignissimos.</p>
+</div>  

@@ -1,0 +1,38 @@
+<h1 class="container bg-danger text-white text-center my-4 py4">Inicio</h1>
+
+
+<div class="container">
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let animal of animales; index as i">
+        <th scope="row">{{1+i}}</th>
+        <td>{{animal.tipo}}</td>
+        <td>{{animal.nombre}}</td>
+        <td>{{animal.edad}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of equipo">
+      <h6> Nombre:{{item.nombre}}</h6>
+      <h6> Especialidad:{{item.especialidad}}</h6>
+      <a href="#">Leer mas ...</a>
+    </li>
+
+
