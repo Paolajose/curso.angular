@@ -10,9 +10,12 @@ import { AppPaolaComponent } from './app-paola/app-paola.component';
 import { HeaderComponent } from './header/header.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { FooterComponent } from './footer/footer.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 const routes: Routes=[
-  { path:'header', component: HeaderComponent },
+  { path:'nosotros', component: NosotrosComponent },
+  { path:'contacto', component: ContactoComponent },
   { path:'inicio', component: InicioComponent },
   {path: '', redirectTo: 'inicio', pathMatch: 'full'},
 ];
@@ -23,7 +26,9 @@ const routes: Routes=[
     AppPaolaComponent,
     HeaderComponent,
     InicioComponent,
-    FooterComponent
+    FooterComponent,
+    NosotrosComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
