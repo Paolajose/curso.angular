@@ -16,4 +16,5 @@ export class AppComponent {
     {tipo:'gato', nombre:'michu',edad:2},
     {tipo:'conejo', nombre:'burbu',edad:1}
   ]
+
 }

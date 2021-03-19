@@ -7,13 +7,19 @@ import { EquipoService } from '../equipo.service';
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css']
 })
+
 export class InicioComponent implements OnInit {
+  title = 'paola';
+  show:boolean=true;
 
   animales:Array<any>=[
     {tipo:'perro', nombre:'lisa',edad:10},
     {tipo:'gato', nombre:'michu',edad:2},
     {tipo:'conejo', nombre:'burbu',edad:1}
   ]
+
+
+ 
 
   equipo:any []= [];
   constructor(private _servicio:EquipoService) {
@@ -24,4 +30,6 @@ export class InicioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 }
+

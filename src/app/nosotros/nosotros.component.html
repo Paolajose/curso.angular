@@ -10,3 +10,21 @@
       </div>
 
 </div>
+
+<p class="text-danger"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora blanditiis mollitia illum quod quis corrupti omnis quaerat accusantium? Quia officia facilis voluptate perspiciatis aliquid impedit doloremque, nulla nisi nam dignissimos.</p>
+</div>
+
+<div>
+
+  <h1 class="container bg-dark text-white text-center my-4 py-4"> Prueba ngClass</h1>
+
+<button class="btn btn-dark mb-3" (click)="activo='primero'"
+  >Primero</button>
+
+<button class="btn btn-danger mb-3" (click)="activo='segundo'"
+  >Segundo</button>
+
+  <p class="text-info d-none" [ngClass]="{'d-block':activo=='primero'}"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis doloremque ad nostrum modi perspiciatis tenetur, quo repellendus impedit distinctio facilis placeat autem labore aliquid corrupti molestiae fuga cumque dolorem fugiat?</p>
+
+  <p class="text-danger d-none" [ngClass]="{'d-block':activo=='segundo'}"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora blanditiis mollitia illum quod quis corrupti omnis quaerat accusantium? Quia officia facilis voluptate perspiciatis aliquid impedit doloremque, nulla nisi nam dignissimos.</p>
+  
